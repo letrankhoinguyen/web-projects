@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.price {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #3e3e3e;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 1px;
+  border-bottom: 1px solid black;
+}
+
+.pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid black;
+  margin: 0 auto;
+  max-width: 1000px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 20px 10px;
+}
+
+.pricing-card {
+  background: white;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    -webkit-transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    -webkit-transform 0.3s ease;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.pricing-card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.basic-plan {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+.pro-plan {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.premium-plan {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.marker {
+  font-weight: bold;
+}
+
+.tick {
+  color: green;
+}
+
+.tick1 {
+  color: red;
+}
+h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 5px 0px;
+}
+
+a {
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: #f1be32;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
