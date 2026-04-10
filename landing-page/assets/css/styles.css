@@ -314,7 +314,7 @@ a {
 }
 
 /* --------POPULAR TOP-------- */
-.popular .popular-top {
+.popular {
   padding: 65px 0;
   margin-top: 135px;
 }
@@ -358,7 +358,7 @@ a {
 
 /* --------POPULAR COURSE LIST-------- */
 .popular .course-list {
-  margin-top: -10px;
+  margin-top: 55px;
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
@@ -395,7 +395,7 @@ a {
   /* nếu để border: transparent ko thì sẽ xóa cái viền => animation ko mượt  */
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 18px 60px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 18px 32px 0 var(--primary-color);
 }
 
 .popular .head {
@@ -442,4 +442,79 @@ a {
 
 .popular .rating .avalue {
   margin-left: 6px;
+}
+/* --------FEEDBACK-------- */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0px;
+  background: #2e2100;
+}
+
+.feedback .feedback-item {
+  display: flex;
+}
+
+.feedback-item .info .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  object-fit: cover;
+}
+
+.feedback-item .info .name {
+  color: #f7f7f7;
+  font-size: 2.4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 3.4rem; /* 141.667% */
+  margin-bottom: 4px;
+  margin-top: 18px;
+}
+
+.feedback-item .info .description {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 185.714% */
+  margin-bottom: 28px;
+}
+
+.feedback-item .info .dots {
+  width: 30px;
+  height: 6px;
+  display: flex;
+  gap: 6px;
+}
+
+.feedback-item .info .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item .feedback-quote {
+  width: 65.8%;
+  margin-left: auto;
+}
+
+.feedback-item .open-quote {
+  width: 30px;
+  height: 28px;
+}
+
+.feedback-item .feedback-quote blockquote {
+  width: 740px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.feedback-item .dot.active {
+  cursor: default;
+  background-color: var(--primary-color);
 }
