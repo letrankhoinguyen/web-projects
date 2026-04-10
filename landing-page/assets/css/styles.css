@@ -5,6 +5,7 @@
 :root {
   --font-heading: "Sen", sans-serif;
   --primary-color: #ffb900;
+  --line-clamp: 1;
 }
 
 html {
@@ -53,6 +54,21 @@ a {
 .btn:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
 }
 /* --------HEADER-------- */
 .header {
@@ -347,6 +363,7 @@ a {
   justify-content: space-evenly;
   gap: 30px;
 }
+
 .popular .course-item .thumb {
   width: 100%;
   max-width: 370px;
@@ -370,6 +387,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 
 .popular .course-item:hover {
