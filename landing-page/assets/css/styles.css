@@ -4,7 +4,7 @@
 
 :root {
   --font-heading: "Sen", sans-serif;
-  --background-color: #ffb900;
+  --primary-color: #ffb900;
 }
 
 html {
@@ -17,6 +17,15 @@ body {
 }
 
 /* --------COMMON-------- */
+.heading-level2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 4.8rem; /* 126.316% */
+  letter-spacing: -0.076rem;
+}
+
 .main-content {
   width: 1170px;
   margin-left: auto;
@@ -43,6 +52,7 @@ a {
 
 .btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 /* --------HEADER-------- */
 .header {
@@ -114,7 +124,7 @@ a {
 /* --------HERO LEFT-------- */
 .hero .media-block .img {
   border-radius: 20px;
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
 }
@@ -153,7 +163,7 @@ a {
   flex-direction: column;
   position: absolute;
   bottom: 48px;
-  right: 0px;
+  right: 0;
   width: 270px;
   border-radius: 12px;
   background: #fff;
@@ -239,7 +249,7 @@ a {
 
 .hero-ctn {
   border-radius: 32px;
-  background: var(--background-color);
+  background: var(--primary-color);
   min-width: 180px;
   line-height: 64px;
 }
@@ -285,4 +295,133 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
+}
+
+/* --------POPULAR TOP-------- */
+.popular .popular-top {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.popular .popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular .description {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 458px;
+  line-height: 3rem; /* 166.667% */
+}
+
+.popular .control {
+  display: flex;
+  gap: 18px;
+}
+
+.popular .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+
+.popular .control-btn:hover {
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+/* --------POPULAR COURSE LIST-------- */
+.popular .course-list {
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.popular .course-item .thumb {
+  width: 100%;
+  max-width: 370px;
+  max-height: 278px;
+  object-fit: cover;
+}
+
+.popular .course-item .description {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.6rem; /* 185.714% */
+  margin-top: 6px;
+  max-width: 370px;
+  width: 100%;
+}
+
+.popular .course-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  /* nếu để border: transparent ko thì sẽ xóa cái viền => animation ko mượt  */
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 60px 0 rgba(0, 0, 0, 0.07);
+}
+
+.popular .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular .course-item .rating {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.popular .course-item .btn-book-now {
+  border-radius: 25px;
+  background: #171100;
+  color: #fff;
+}
+
+.popular .course-item .btn-book-now:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.popular .course-item .title a,
+.popular .course-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3rem; /* 166.667% */
+}
+
+.popular .course-item .booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.popular .course-item .info {
+  padding: 16px 22px 32px;
+}
+
+.popular .rating .avalue {
+  margin-left: 6px;
 }
