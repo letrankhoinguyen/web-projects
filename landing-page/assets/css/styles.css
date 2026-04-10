@@ -495,7 +495,7 @@ a {
   cursor: pointer;
 }
 
-.feedback-item .feedback-quote {
+.feedback-item .block-quote {
   width: 65.8%;
   margin-left: auto;
 }
@@ -505,7 +505,7 @@ a {
   height: 28px;
 }
 
-.feedback-item .feedback-quote blockquote {
+.feedback-item .block-quote blockquote {
   width: 740px;
   color: #fff;
   font-size: 2.6rem;
@@ -517,4 +517,54 @@ a {
 .feedback-item .dot.active {
   cursor: default;
   background-color: var(--primary-color);
+}
+/* --------FEATURES-------- */
+.feature {
+  margin-top: 135px;
+  padding: 65px 0px;
+}
+
+.body {
+  display: flex;
+  gap: 130px;
+  align-items: center;
+}
+
+.feature .content {
+  width: 41%;
+}
+
+.feature .image-holder {
+  display: flex;
+  gap: 30px;
+}
+
+.feature .image-holder .image {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.feature .image-holder .image1 {
+  margin-top: 34px;
+}
+
+.feature .content .description {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 2.8rem; /* 175% */
+}
+
+.feature .btn-sign-up {
+  border-radius: 26px;
+  width: 137px;
+  height: 50px;
+  margin-top: 32px;
+}
+
+.feature .btn-sign-up:hover {
+  background: var(--primary-color);
 }
