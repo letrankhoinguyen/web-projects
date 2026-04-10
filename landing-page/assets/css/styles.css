@@ -605,5 +605,5 @@ a {
 }
 
 .feature-2 .btn-join-now:hover {
-  background: #ffb900;
+  background: var(--primary-color);
 }
