@@ -124,6 +124,10 @@ a {
   min-width: 144px;
 }
 
+.header .btn-sign-up:hover {
+  background-color: var(--primary-color);
+}
+
 .header .action {
   margin-left: 49px;
 }
@@ -183,7 +187,7 @@ a {
   width: 270px;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.05);
 }
 
 .hero-summary .item {
@@ -396,7 +400,7 @@ a {
   /* nếu để border: transparent ko thì sẽ xóa cái viền => animation ko mượt  */
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0 18px 32px 0 var(--primary-color);
+  box-shadow: 0 10px 32px 0 var(--primary-color);
 }
 
 .popular .head {
@@ -619,12 +623,13 @@ a {
   display: flex;
   gap: 30px;
   margin-top: 55px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 28px;
 }
 
 .blogs .blog-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .blog-top .description {
@@ -635,11 +640,15 @@ a {
   font-weight: 400;
   line-height: 2.8rem; /* 175% */
   width: 448px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blogs .blog-item .image {
   width: 100%;
+  height: 250px;
+  /* phải set height vì nếu ko thì các height sẽ khác nhau, vì đang trong flex layout nên k thấy đc */
+  border-radius: 16px 16px 0 0;
   object-fit: cover;
 }
 
@@ -648,21 +657,24 @@ a {
   flex-direction: column;
   border-radius: 16px;
   background: #fff;
-  overflow: hidden;
-  flex: 1;
+  width: calc(33% - 20px);
+  flex-shrink: 0;
+}
+
+.blog-item .content {
+  padding: 20px 20px 28px;
 }
 
 .blog-item .content .date-holder {
   display: flex;
   gap: 4px;
   padding-bottom: 12px;
-  padding-top: 20px;
   width: 160px;
   border-bottom: 1px solid #e2dfda;
   border-radius: 0.5px;
 }
 
-.blog-item .content .date-holder .date {
+.blog-item .date-holder .date {
   color: #5f5b53;
   font-size: 1.4rem;
   font-style: normal;
@@ -678,10 +690,6 @@ a {
   line-height: 2.8rem; /* 175% */
 }
 
-.blog-item .content {
-  padding: 0 28px 28px;
-}
-
 .blog-item .btn-read-more {
   width: 118px;
   height: 50px;
@@ -693,5 +701,27 @@ a {
 }
 
 .blogs .blog-item:hover {
-  box-shadow: 0 16px 32px 0 var(--primary-color);
+  background: #fff;
+  box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blogs .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  cursor: default;
+  background: #ffb900;
 }
