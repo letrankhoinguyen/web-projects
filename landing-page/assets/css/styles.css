@@ -624,7 +624,6 @@ a {
   display: flex;
   gap: 30px;
   margin-top: 55px;
-  justify-content: space-between;
   overflow: hidden;
   padding-bottom: 28px;
 }
