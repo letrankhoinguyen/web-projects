@@ -388,6 +388,7 @@ a {
   border: 1px solid #e2dfda;
   background: #fff;
   flex: 1;
+  overflow: hidden;
 }
 
 .popular .course-item:hover {
@@ -606,4 +607,91 @@ a {
 
 .feature-2 .btn-join-now:hover {
   background: var(--primary-color);
+}
+/* --------BLOG-------- */
+.blogs {
+  background-color: #fffcf4;
+  padding: 96px 0;
+  margin-top: 135px;
+}
+
+.blogs .blog-bottom {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.blogs .blog-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-top .description {
+  color: #696262;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem; /* 175% */
+  width: 448px;
+  text-align: center;
+}
+
+.blogs .blog-item .image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .blog-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  flex: 1;
+}
+
+.blog-item .content .date-holder {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 12px;
+  padding-top: 20px;
+  width: 160px;
+  border-bottom: 1px solid #e2dfda;
+  border-radius: 0.5px;
+}
+
+.blog-item .content .date-holder .date {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem; /* 185.714% */
+}
+
+.blog-item .content .title {
+  color: #171100;
+  padding: 12px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.8rem; /* 175% */
+}
+
+.blog-item .content {
+  padding: 0 28px 28px;
+}
+
+.blog-item .btn-read-more {
+  width: 118px;
+  height: 50px;
+  font-size: 1.4rem;
+}
+
+.blog-item .btn-read-more:hover {
+  background-color: var(--primary-color);
+}
+
+.blogs .blog-item:hover {
+  box-shadow: 0 16px 32px 0 var(--primary-color);
 }
