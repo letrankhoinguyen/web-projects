@@ -31,6 +31,9 @@ a {
   background: #2e80ce;
   width: 205px;
   height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
@@ -44,11 +47,19 @@ a {
   padding-top: 38px;
 }
 
-.header-top {
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+}
+
+.hero__content {
+  width: 44%;
+}
+
+.hero__media {
+  flex: 1;
 }
 
 .navbar__list {
@@ -56,7 +67,7 @@ a {
 }
 
 .navbar__link,
-.header-action--login {
+.header__action--login {
   padding: 8px 21px;
   color: #c9d2da;
   font-size: 1.6rem;
@@ -66,7 +77,7 @@ a {
 
 .navbar__link--active,
 .navbar__link:hover,
-.header-action--login:hover {
+.header__action--login:hover {
   color: #fff;
   font-size: 1.6rem;
   text-shadow: 0.5px 0 0 currentColor;
@@ -85,8 +96,7 @@ a {
   top: -3px;
 }
 
-.header-action--signup {
-  display: inline-flex;
+.header__action--signup {
   width: 104px;
   height: 44px;
   align-items: center;
@@ -96,4 +106,69 @@ a {
   font-weight: 400;
   line-height: 2.8rem; /* 175% */
   margin-left: 7px;
+}
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 84px;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 8rem; /* 114.286% */
+  letter-spacing: -0.14rem;
+}
+
+.hero__desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem; /* 166.667% */
+  margin-top: 22px;
+  width: 468px;
+}
+
+.hero__row {
+  display: inline-flex;
+  margin-top: 53px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 38px;
+}
+
+.hero__btn {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem; /* 166.667% */
+}
+
+.hero__phone {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem; /* 166.667% */
+}
+
+.hero__img {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  z-index: 1;
+  margin-right: -6px;
+}
+
+.hero__img--small {
+  width: 210px;
+  height: 410px;
+  border-radius: 0 6px 6px 0;
 }
