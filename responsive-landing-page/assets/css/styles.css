@@ -312,6 +312,7 @@ a {
 
 .work-item__more {
   margin-top: 18px;
+  display: inline-block;
 }
 
 .work-item:hover {
@@ -322,4 +323,47 @@ a {
 
 .work-item:hover .work-item__more {
   color: #2e80ce;
+}
+
+/* ABOUT */
+.about {
+  padding: 170px;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__imgs {
+  position: relative;
+}
+
+.about__img--big {
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.about__img--small {
+  position: absolute;
+  width: 332px;
+  height: 370px;
+  right: 0;
+  top: 121px;
+  object-fit: cover;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.about__heading {
+  width: 470px;
+  padding-bottom: 18px;
+}
+
+.about__desc {
+  width: 468px;
+  padding-bottom: 38px;
 }
