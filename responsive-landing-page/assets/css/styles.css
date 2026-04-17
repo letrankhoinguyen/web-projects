@@ -60,6 +60,24 @@ a {
   font-weight: 300;
   line-height: 1.67; /* 166.667% */
 }
+
+.nav-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  border-radius: 50%;
+  color: #575f66;
+}
+
+.nav-btn:hover {
+  color: white;
+  border: transparent;
+  background: #2e80ce;
+}
 /* HEADER */
 .header {
   min-height: 100vh;
@@ -194,7 +212,7 @@ a {
 }
 /* SERVICE */
 .service {
-  padding: 170px;
+  padding: 85px;
 }
 
 .service__heading,
@@ -276,6 +294,7 @@ a {
 }
 /* WORK */
 .work {
+  margin-top: 85px;
   padding: 100px 0;
   background: #f6fbff;
 }
@@ -327,7 +346,8 @@ a {
 
 /* ABOUT */
 .about {
-  padding: 170px;
+  margin-top: 85px;
+  padding: 85px 0 206px;
 }
 
 .about-row {
@@ -351,7 +371,7 @@ a {
   position: absolute;
   width: 332px;
   height: 370px;
-  right: 0;
+  left: 238px;
   top: 121px;
   object-fit: cover;
   border-radius: 6px;
@@ -366,4 +386,71 @@ a {
 .about__desc {
   width: 468px;
   padding-bottom: 38px;
+}
+/* OUR TEAM */
+.team {
+  padding: 85px 0;
+}
+
+.team__heading {
+  text-align: center;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
+}
+
+.team__btn {
+  margin-top: 38px;
+  display: flex;
+  margin: 38px auto 0;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-item__media {
+  border-radius: 6px;
+  width: 270px;
+  height: 318px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #eaf6ff;
+}
+
+.team-item__img {
+  width: 262px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.team-item__heading {
+  color: #10375c;
+  margin-top: 12px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.team-item__desc {
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
+}
+
+.team__footer {
+  text-align: center;
+  padding-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 18px;
 }
