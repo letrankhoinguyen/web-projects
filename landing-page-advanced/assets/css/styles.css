@@ -69,7 +69,7 @@ a {
   height: 36px;
   border-radius: 50%;
   border: 1px solid #575f66;
-  border-radius: 50%;
+  background: transparent;
   color: #575f66;
 }
 
@@ -77,6 +77,7 @@ a {
   color: white;
   border: transparent;
   background: #2e80ce;
+  cursor: pointer;
 }
 /* HEADER */
 .header {
@@ -498,4 +499,110 @@ a {
   margin-top: 38px;
   align-items: center;
   column-gap: 28px;
+}
+/* BLOG */
+.blog__inner {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 85px 0;
+}
+
+.blog__control {
+  display: flex;
+  gap: 18px;
+}
+
+.blog__read-more {
+  display: inline-block;
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.55; /* 155.556% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  margin-top: 28px;
+}
+
+.blog__heading {
+  max-width: 470px;
+}
+
+.blog__control {
+  margin-top: 28px;
+}
+
+.blog-item__thumb {
+  width: 270px;
+  height: 172px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: ease 0.5s;
+}
+
+.blog__list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.blog-item {
+  max-width: 270px;
+  max-height: 375px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  overflow: hidden;
+}
+
+.blog-item__body {
+  padding: 18px 22px 21px;
+}
+
+.blog-item__heading {
+  max-width: 224px;
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.62; /* 162.5% */
+}
+
+.blog-item__desc {
+  color: #575f66;
+  max-width: 224px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71; /* 171.429% */
+  margin-top: 10px;
+}
+
+.blog-item__more {
+  display: inline-block;
+  color: #10375c;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.blog-item:hover {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: 0 18px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blog-item:hover .blog-item__more {
+  color: #2e80ce;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.blog-item__img {
+  height: 172px;
+  overflow: hidden;
+}
+
+.blog-item:hover .blog-item__thumb {
+  transform: scale(1.1);
 }
