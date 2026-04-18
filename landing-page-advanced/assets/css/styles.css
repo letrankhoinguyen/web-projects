@@ -454,3 +454,48 @@ a {
   align-items: center;
   column-gap: 18px;
 }
+/* INSTALL CTA */
+.install__inside {
+  margin: 180px 0 85px;
+  position: relative;
+  min-height: 427px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+}
+
+.install__img {
+  position: absolute;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  bottom: 0;
+}
+
+.install__content {
+  min-width: 586px;
+}
+
+.install__heading {
+  max-width: 489px;
+  color: #fff;
+}
+
+.install__desc {
+  max-width: 586px;
+  margin-top: 18px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+
+.install__row {
+  display: flex;
+  margin-top: 38px;
+  align-items: center;
+  column-gap: 28px;
+}
