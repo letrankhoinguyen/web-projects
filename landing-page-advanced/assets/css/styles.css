@@ -606,3 +606,35 @@ a {
 .blog-item:hover .blog-item__thumb {
   transform: scale(1.1);
 }
+/* APPOINTMENT */
+.appointment {
+  margin-top: 85px;
+}
+
+.appointment__inside {
+  background: #f6fbff;
+  padding: 100px 178px;
+  text-align: center;
+}
+
+.appointment__desc {
+  margin: 18px auto 0;
+  color: #575f66;
+  width: 550px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+}
+
+.appointment__heading::after {
+  content: "";
+  width: 136px;
+  height: 2px;
+  display: block;
+  margin: 18px auto 0;
+  background: #2e80ce;
+}
+
+.appointment__btn {
+  margin-top: 38px;
+}
