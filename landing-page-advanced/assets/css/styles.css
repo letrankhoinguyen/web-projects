@@ -96,11 +96,10 @@ a {
   padding: 38px 0 110px;
 }
 
-.header__top {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
 }
 
 .hero__content {

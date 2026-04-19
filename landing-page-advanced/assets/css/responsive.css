@@ -1,0 +1,62 @@
+/* mặc định desktop: ẩn menu mobile */
+.mobile-header {
+  display: none;
+}
+
+/* PC */
+@media (width >= 992px) {
+}
+
+/* TABLET & MOBILE */
+@media (width < 992px) {
+  .header-top {
+    position: relative;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .menu-header__icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  /* CHECKED/UNCHECKED */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 2;
+    /* HIỆU ỨNG */
+    opacity: 0;
+    /* ẨN HẲN PHẦN TỬ KHỎI GIAO DIỆN */
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  /* CHECKED/UNCHECKED */
+  .menu-checkbox:checked ~ .menu-overlay {
+    /* HIỆU ỨNG*/
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* TABLET */
+@media (768px <= width < 992px) {
+}
+
+/* MOBILE */
+@media (width < 768px) {
+}
