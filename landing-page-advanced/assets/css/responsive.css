@@ -166,10 +166,51 @@
 
   .team__list {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
   .team-item__media {
     margin-top: 18px;
+    width: 80%;
+  }
+  /* INSTALL */
+  .install__img {
+    display: none;
+  }
+
+  .install__content {
+    min-width: 80%;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .install__inside {
+    justify-content: center;
+  }
+
+  .install__heading {
+    margin: 0 auto;
+  }
+
+  .install__row {
+    justify-content: center;
+  }
+
+  /* BLOG */
+  .blog__inner {
+    flex-direction: column;
+  }
+
+  .blog__content {
+    text-align: center;
+  }
+
+  .blog__control {
+    justify-content: center;
+  }
+
+  .blog__list {
+    margin-top: 10px;
   }
 }
 
@@ -182,6 +223,19 @@
 
 /* MOBILE */
 @media (width < 768px) {
+  .blog-item {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+
+  .blog-item__thumb {
+    min-width: 100%;
+  }
+
+  .blog__list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 html,
