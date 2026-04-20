@@ -127,7 +127,6 @@ a {
 .navbar__link:hover,
 .header__action--login:hover {
   color: #fff;
-  font-size: 1.6rem;
   text-shadow: 0.5px 0 0 currentColor;
   line-height: 1.75; /* 175% */
 }
@@ -211,7 +210,6 @@ a {
   width: 330px;
   height: 540px;
   border-radius: 6px;
-  z-index: 1;
   margin-right: -6px;
 }
 
