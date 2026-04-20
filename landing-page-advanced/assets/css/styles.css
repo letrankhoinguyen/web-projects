@@ -330,7 +330,7 @@ a {
 }
 .work-item__desc,
 .work-item__more {
-  width: 254px;
+  max-width: 254px;
   color: #575f66;
   margin-top: 28px;
   font-size: 1.6rem;
