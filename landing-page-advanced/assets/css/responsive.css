@@ -88,6 +88,25 @@
   .navbar__link:hover {
     background-color: rgb(143, 209, 209);
   }
+
+  .hero {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .hero__desc {
+    margin: 0 auto;
+  }
+
+  .hero__content {
+    width: 80%;
+    order: 1;
+    text-align: center;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
 }
 
 /* TABLET */
@@ -96,4 +115,9 @@
 
 /* MOBILE */
 @media (width < 768px) {
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
