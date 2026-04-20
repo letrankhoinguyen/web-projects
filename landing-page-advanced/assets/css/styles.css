@@ -661,6 +661,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
   column-gap: 78px;
+  border-bottom: 1px solid #406181;
 }
 
 .footer__heading {
@@ -770,5 +771,4 @@ a {
   line-height: 1.86; /* 185.714% */
   padding-top: 28px;
   padding-bottom: 42px;
-  border-top: 1px solid #406181;
 }

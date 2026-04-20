@@ -219,6 +219,14 @@
   .team__list {
     grid-template-columns: 1fr 1fr;
   }
+
+  .footer-hidden {
+    display: none;
+  }
+
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 
 /* MOBILE */
@@ -236,9 +244,4 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-html,
-body {
-  overflow-x: hidden;
 }
