@@ -17,10 +17,13 @@ body {
 
 /* TABLET & MOBILE */
 @media (width < 992px) {
+  /* HEADER */
   .navbar {
     display: none;
   }
-
+  .header {
+    padding-bottom: 30px;
+  }
   .mobile-header {
     display: block;
   }
@@ -96,7 +99,7 @@ body {
   .navbar__link:hover {
     background-color: rgb(143, 209, 209);
   }
-
+  /* HERO */
   .hero {
     flex-direction: column;
     row-gap: 30px;
@@ -115,7 +118,7 @@ body {
   .hero__row {
     justify-content: center;
   }
-
+  /* SERVICE */
   .service__row {
     flex-direction: column;
   }
@@ -132,7 +135,7 @@ body {
   .service__img {
     width: 100%;
   }
-
+  /* WORK */
   .work-item__desc,
   .work-item__more {
     max-width: 390px;
@@ -172,6 +175,7 @@ body {
     margin-top: 28px;
   }
 
+  /* TEAM */
   .team__list {
     grid-template-columns: 1fr;
     row-gap: 30px;
@@ -181,6 +185,7 @@ body {
     margin-top: 18px;
     width: 80%;
   }
+
   /* INSTALL */
   .install__img {
     display: none;
@@ -239,20 +244,10 @@ body {
 
 /* MOBILE */
 @media (width < 768px) {
-  .blog-item {
-    margin-top: 20px;
-    max-width: 80%;
+  .section-heading {
+    font-size: 3rem;
   }
-
-  .blog-item__thumb {
-    min-width: 100%;
-  }
-
-  .blog__list {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  /* HEADER */
   .header__action {
     display: none;
   }
@@ -278,7 +273,7 @@ body {
   .menu-drawer {
     padding: 20px;
   }
-
+  /* HERO */
   .hero__img--small {
     display: none;
   }
@@ -291,7 +286,7 @@ body {
     flex-direction: column;
     row-gap: 20px;
   }
-
+  /* SERVICE */
   .service {
     padding: 30px 10px 10px;
   }
@@ -313,14 +308,7 @@ body {
     margin-top: 25px;
   }
 
-  .about__img--big {
-    border-radius: 20px;
-  }
-
-  .about__heading {
-    margin-top: 5px;
-  }
-
+  /* INSTALl */
   .install__inside {
     margin-top: 50px;
   }
@@ -337,6 +325,7 @@ body {
     text-align: left;
   }
 
+  /* APPOINTMENT */
   .appointment__inside {
     width: 100%;
   }
@@ -349,19 +338,41 @@ body {
   .appointment__inside {
     padding: 0;
   }
-  .section-heading {
-    font-size: 3rem;
-  }
 
+  /* ABOUT */
   .about {
     padding: 85px 0 85px;
   }
 
+  .about__img--big {
+    border-radius: 20px;
+  }
+
+  .about__heading {
+    margin-top: 5px;
+  }
+  /* BLOG */
+  .blog-item {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+
+  .blog-item__thumb {
+    min-width: 100%;
+  }
+
+  .blog__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
   .footer__top {
     grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 
   .footer {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 }
