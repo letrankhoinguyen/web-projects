@@ -146,19 +146,32 @@
                 ></label>
               </div>
               <!-- NAV MOBILE -->
-              <ul id="navbar__list--mobile"></ul>
-              <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const navPC = document.querySelector("#navbar__list--pc");
-                  const navMobile = document.querySelector(
-                    "#navbar__list--mobile",
-                  );
+              <ul id="navbar__list--mobile">
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    const navPC = document.querySelector("#navbar__list--pc");
+                    const navMobile = document.querySelector(
+                      "#navbar__list--mobile",
+                    );
 
-                  if (!navPC || !navMobile) return;
+                    if (!navPC || !navMobile) return;
 
-                  navMobile.innerHTML = navPC.innerHTML;
-                });
-              </script>
+                    navMobile.innerHTML = navPC.innerHTML;
+                  });
+                </script>
+              </ul>
+
+              <!-- SEPARATE -->
+              <div class="separate">
+                <ul class="navbar__list" id="navbar__list--separate">
+                  <li class="navbar__item">
+                    <a href="#!" class="navbar__link">Login</a>
+                  </li>
+                  <li class="navbar__item">
+                    <a href="#!" class="navbar__link">Signup</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

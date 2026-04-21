@@ -94,7 +94,6 @@ a {
   min-height: 100vh;
   background-color: var(--header-bg);
   padding: 38px 0 110px;
-  min-width: 100vw;
 }
 
 .header-top {
